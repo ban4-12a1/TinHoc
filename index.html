@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vinhbuihehe">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp 12A1 - THPT Phúc Thọ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- VINH PHUONG DUONG CUONG -->
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="fade-in"> CHÀO MỪNG BẠN ĐẾN VỚI DỰ ÁN TRANG WEB CỦA NHÓM MÌNH </h1>
+    <h2 class="fade-in">"Lớp 12A1 - Nơi Gắn Kết và Trưởng Thành"</h2>
+    <!-- VINH PHUONG DUONG CUONG -->
+    <nav data-aos="fade-right">
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="members.html">Thành viên</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+  </header>
+  <!-- BÙI QUANG VINH -->
+  <main>
+    <script>
+    const countdownDate = new Date("June 25, 2025 00:00:00").getTime();
+    const countdownFunction = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days < 10 ? '0' + days : days;
+        document.getElementById("hours").textContent = hours < 10 ? '0' + hours : hours;
+        document.getElementById("minutes").textContent = minutes < 10 ? '0' + minutes : minutes;
+        document.getElementById("seconds").textContent = seconds < 10 ? '0' + seconds : seconds;
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "Chúc mừng bạn đã hoàn thành kỳ thi!";
+        }
+    }, 1000);
+    </script>
+    <!-- VINH PHUONG DUONG CUONG -->
+    <section class="fade-in" id="countdown-section">
+      <h2>Đếm ngược đến Kỳ Thi Tốt Nghiệp THPT Quốc Gia 2025</h2>
+      <div id="countdown">
+          <span id="days">00</span> ngày
+          <span id="hours">00</span> giờ
+          <span id="minutes">00</span> phút
+          <span id="seconds">00</span> giây
+      </div>
+    </section>
+    <!-- VINH PHUONG DUONG CUONG -->
+    <section>
+      <h2 data-aos="fade-up">Chào mừng đến với lớp 12A1</h2>
+      <p data-aos="fade-up">"Học hết mình – Chơi nhiệt tình "</p>
+      <img data-aos="zoom-in" src="class_photo.jpg" alt="Ảnh lớp học" style="width:100%; height:auto;">
+      <blockquote>
+        <p data-aos="fade-up"><em>"Lớp 12A1 luôn đoàn kết và năng động, mỗi ngày học là một ngày vui!"</em></p>
+      </blockquote>
+    </section>
+    <!-- VINH PHUONG DUONG CUONG -->
+    <!-- Hoạt động lớp - Slide ảnh - BÙI QUANG VINH -->
+    <section class="slider-hoatdong">
+      <h2 data-aos="fade-down">Hoạt Động Của Lớp</h2>
+      <div class="slider">
+        <div><img src="images/hd1.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd2.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd3.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd4.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd5.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd6.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd7.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd8.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd9.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd10.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd11.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd12.jpg" alt="Thư Viện Ảnh"></div>
+        <div><img src="images/hd13.jpg" alt="Thư Viện Ảnh"></div>
+      </div>
+    </section>
+  </main>
+  <!-- VINH PHUONG DUONG CUONG -->
+  <footer>
+    <p>&copy; 2025 - Lớp 12A1, THPT Phúc Thọ</p>
+    <div>
+      <a href="blabla"><i class="fab fa-facebook fa-2x"></i></a>
+    </div>
+  </footer>
+  <!-- VINH PHUONG DUONG CUONG -->
+  <!-- ĐẾM THỜI GIAN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
